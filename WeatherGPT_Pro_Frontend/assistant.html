@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="WeatherGPT responsive weather decision assistant frontend">
+<title>AI Assistant | WeatherGPT</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand-mini">WeatherGPT</div>
+    <nav class="nav"><a href="index.html" class=""><span class="nav-icon">⌂</span><span class="nav-label">Dashboard</span></a><a href="plan.html" class=""><span class="nav-icon">▣</span><span class="nav-label">Plan My Day</span></a><a href="assistant.html" class="active"><span class="nav-icon">▧</span><span class="nav-label">AI Assistant</span></a><a href="forecast.html" class=""><span class="nav-icon">☁</span><span class="nav-label">Forecast</span></a><a href="map.html" class=""><span class="nav-icon">◫</span><span class="nav-label">Live Map</span></a><a href="air-quality.html" class=""><span class="nav-icon">♨</span><span class="nav-label">Air Quality</span></a><a href="alerts.html" class=""><span class="nav-icon">♧</span><span class="nav-label">Alerts</span></a><a href="compare.html" class=""><span class="nav-icon">▥</span><span class="nav-label">Compare Cities</span></a><a href="travel.html" class=""><span class="nav-icon">✈</span><span class="nav-label">Travel Planner</span></a><a href="saved.html" class=""><span class="nav-icon">♡</span><span class="nav-label">Saved Plans</span></a><a href="settings.html" class=""><span class="nav-icon">⚙</span><span class="nav-label">Settings</span></a></nav>
+    <div class="green-card">
+      <div class="leaf">🌱</div>
+      <strong>A greener tomorrow</strong>
+      <p>Smarter choices for a healthier India. 🌿</p>
+    </div>
+  </aside>
+
+  <div class="overlay"></div>
+
+  <header class="topbar">
+    <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+    <div class="logo">
+      <div class="cloud-logo">☁️</div>
+      <div class="logo-text">
+        <b>Weather<span>GPT</span></b>
+        <small>Your AI Weather Decision Assistant</small>
+      </div>
+    </div>
+
+    <label class="searchbar" aria-label="Search">
+      <span>⌕</span>
+      <input id="globalSearch" type="search" placeholder="Search any city or ask a question...">
+    </label>
+
+    <div class="location-chip">📍 Mumbai, Maharashtra</div>
+    <div class="top-spacer"></div>
+
+    <div class="clock">
+      <small id="currentDate">Loading date...</small>
+      <strong id="currentTime">--:--</strong>
+    </div>
+
+    <div class="theme-toggle time-toggle" aria-label="Theme switch">
+      <button data-theme="dark" class="active">☀️</button>
+      <button data-theme="light">🌙</button>
+    </div>
+
+    <button class="icon-btn" aria-label="Notifications">♧<b class="badge">3</b></button>
+    <div class="user account-menu"><button class="avatar account-avatar" type="button" aria-label="Account menu"><span data-user-initials>KS</span></button><button class="account-name" type="button"><span class="account-label">Hello, <span data-user-name>Krishna</span>⌄</span></button><button class="account-logout" data-logout type="button">Logout</button></div>
+  </header>
+
+  <main class="main">
+    <div class="page-shell">
+      
+<div class="page-title"><h1>AI Weather Assistant</h1><p>Ask WeatherGPT for practical, personalized weather decisions.</p></div>
+<div class="content-grid">
+<section class="card stat-card wide">
+  <div class="section-title">🤖 WeatherGPT</div>
+  <div id="chatMessages"><div class="ai-bubble">Hi Krishna! 👋 Tell me your activity, place, date, and preferred time. I’ll turn forecast data into a simple recommendation.</div></div>
+  <div class="ask"><input id="aiInput" placeholder="Ask anything about weather, travel, or activities..."><button id="aiSend">➤</button></div>
+</section>
+<section class="card stat-card">
+  <h3>Suggested questions</h3>
+  <div class="chips">
+    <button class="chip">Best time for an outdoor event?</button>
+    <button class="chip">Will it rain tomorrow evening?</button>
+    <button class="chip">What should I carry for a trip?</button>
+  </div>
+</section>
+<section class="card stat-card">
+  <h3>Recent answers</h3>
+  <div class="mini-list"><div class="mini-row"><span>Run tomorrow</span><span class="pill red">Reschedule</span></div><div class="mini-row"><span>Weekend trip</span><span class="pill">Good after 3 PM</span></div></div>
+</section>
+</div>
+
+      
+    <footer class="footer">
+      <span>WeatherGPT &nbsp;|&nbsp; Built for a safer, smarter, greener India 🌱</span>
+      <span><a href="index.html">About</a><a href="settings.html">Privacy</a><a href="settings.html">Terms</a><a href="assistant.html">Contact</a></span>
+    </footer>
+    </div>
+  </main>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

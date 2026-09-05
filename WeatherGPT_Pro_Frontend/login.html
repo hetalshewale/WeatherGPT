@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="WeatherGPT secure frontend authentication">
+<title>Sign In | WeatherGPT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+<div class="auth-shell">
+  <div class="auth-brand-panel">
+    <div class="auth-logo"><div class="cloud-logo">☁️</div><div><b>Weather<span>GPT</span></b><small>Your AI Weather Decision Assistant</small></div></div>
+    <div class="auth-copy">
+      <div class="auth-kicker">SMARTER WEATHER DECISIONS</div>
+      <h1>Plan smarter.<br><span>Live better.</span></h1>
+      <p>Sign in to save weather-aware plans, use the AI assistant, manage alerts, and keep your preferences across pages.</p>
+      <div class="auth-feature-grid">
+        <div>🌦️<strong>Live Forecasts</strong><span>Weather-aware planning</span></div>
+        <div>🤖<strong>AI Assistant</strong><span>Personal recommendations</span></div>
+        <div>🔔<strong>Smart Alerts</strong><span>Important changes</span></div>
+        <div>💾<strong>Saved Plans</strong><span>Your plans in one place</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="auth-card">
+    <div class="auth-card-head">
+      <div>
+        <h2>Welcome back</h2>
+        <p>Sign in to continue to WeatherGPT</p>
+      </div>
+      <div class="avatar">WG</div>
+    </div>
+
+    <form id="loginForm" novalidate>
+      <div class="auth-field">
+        <label for="loginEmail">Email address</label>
+        <input id="loginEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <small class="field-error" data-error-for="loginEmail"></small>
+      </div>
+
+      <div class="auth-field">
+        <label for="loginPassword">Password</label>
+        <div class="password-wrap">
+          <input id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter your password" required minlength="6">
+          <button type="button" class="password-toggle" data-password-target="loginPassword">Show</button>
+        </div>
+        <small class="field-error" data-error-for="loginPassword"></small>
+      </div>
+
+      <div class="auth-row">
+        <label class="check">
+          <input id="rememberMe" type="checkbox">
+          <span>Remember me</span>
+        </label>
+        <a href="forgot-password.html">Forgot password?</a>
+      </div>
+
+      <button class="auth-primary" type="submit">Sign In →</button>
+      <div class="auth-divider"><span>or</span></div>
+      <button class="auth-secondary" type="button" id="demoLogin">Use Demo Account</button>
+
+      <p class="auth-switch">Don't have an account? <a href="signup.html">Create account</a></p>
+      <p class="auth-note">Demo frontend authentication stores account/session data locally in your browser. It is not production-grade server authentication.</p>
+    </form>
+  </div>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="auth.js"></script>
+</body>
+</html>

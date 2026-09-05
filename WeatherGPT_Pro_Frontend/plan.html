@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="WeatherGPT responsive weather decision assistant frontend">
+<title>Plan My Day | WeatherGPT</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand-mini">WeatherGPT</div>
+    <nav class="nav"><a href="index.html" class=""><span class="nav-icon">⌂</span><span class="nav-label">Dashboard</span></a><a href="plan.html" class="active"><span class="nav-icon">▣</span><span class="nav-label">Plan My Day</span></a><a href="assistant.html" class=""><span class="nav-icon">▧</span><span class="nav-label">AI Assistant</span></a><a href="forecast.html" class=""><span class="nav-icon">☁</span><span class="nav-label">Forecast</span></a><a href="map.html" class=""><span class="nav-icon">◫</span><span class="nav-label">Live Map</span></a><a href="air-quality.html" class=""><span class="nav-icon">♨</span><span class="nav-label">Air Quality</span></a><a href="alerts.html" class=""><span class="nav-icon">♧</span><span class="nav-label">Alerts</span></a><a href="compare.html" class=""><span class="nav-icon">▥</span><span class="nav-label">Compare Cities</span></a><a href="travel.html" class=""><span class="nav-icon">✈</span><span class="nav-label">Travel Planner</span></a><a href="saved.html" class=""><span class="nav-icon">♡</span><span class="nav-label">Saved Plans</span></a><a href="settings.html" class=""><span class="nav-icon">⚙</span><span class="nav-label">Settings</span></a></nav>
+    <div class="green-card">
+      <div class="leaf">🌱</div>
+      <strong>A greener tomorrow</strong>
+      <p>Smarter choices for a healthier India. 🌿</p>
+    </div>
+  </aside>
+
+  <div class="overlay"></div>
+
+  <header class="topbar">
+    <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+    <div class="logo">
+      <div class="cloud-logo">☁️</div>
+      <div class="logo-text">
+        <b>Weather<span>GPT</span></b>
+        <small>Your AI Weather Decision Assistant</small>
+      </div>
+    </div>
+
+    <label class="searchbar" aria-label="Search">
+      <span>⌕</span>
+      <input id="globalSearch" type="search" placeholder="Search any city or ask a question...">
+    </label>
+
+    <div class="location-chip">📍 Mumbai, Maharashtra</div>
+    <div class="top-spacer"></div>
+
+    <div class="clock">
+      <small id="currentDate">Loading date...</small>
+      <strong id="currentTime">--:--</strong>
+    </div>
+
+    <div class="theme-toggle time-toggle" aria-label="Theme switch">
+      <button data-theme="dark" class="active">☀️</button>
+      <button data-theme="light">🌙</button>
+    </div>
+
+    <button class="icon-btn" aria-label="Notifications">♧<b class="badge">3</b></button>
+    <div class="user account-menu"><button class="avatar account-avatar" type="button" aria-label="Account menu"><span data-user-initials>KS</span></button><button class="account-name" type="button"><span class="account-label">Hello, <span data-user-name>Krishna</span>⌄</span></button><button class="account-logout" data-logout type="button">Logout</button></div>
+  </header>
+
+  <main class="main">
+    <div class="page-shell">
+      
+<div class="page-title"><h1>Plan My Day</h1><p>Build a weather-aware plan and choose the safest time for your day.</p></div>
+<div class="content-grid">
+<section class="card stat-card wide">
+  <div class="section-title">🗓️ Create your plan</div>
+  <div class="sub">All controls are frontend-ready and work without a backend.</div>
+  <div class="activity-row" style="margin-top:12px">
+    <button class="activity active" data-activity="Outdoor Activity">🏃 Outdoor Activity</button>
+    <button class="activity" data-activity="Travel">🚗 Travel</button>
+    <button class="activity" data-activity="Event">👥 Event</button>
+    <button class="activity" data-activity="Sports">⚽ Sports</button>
+  </div>
+  <div class="form-row">
+    <div class="field"><label>Activity</label><div class="field-box" id="activityDisplay">Outdoor Activity</div></div>
+    <div class="field"><label>Location</label><input class="form-control" id="planLocation" value="Mumbai, Maharashtra"></div>
+    <div class="field"><label>Time</label><input class="form-control" id="planTime" value="5:00 PM – 9:00 PM"></div>
+    <button id="analyzePlan" class="primary-btn">Analyze My Plan →</button>
+  </div>
+  <div id="planResultCard" class="ai-bubble hidden"><span id="planResult"></span><br><button id="savePlan" class="secondary-btn" style="width:auto;padding:0 12px">♡ Save Plan</button></div>
+</section>
+<section class="card stat-card"><h3>Recommended window</h3><div class="stat-value">3 PM – 6 PM</div><p style="color:var(--muted)">Lower weather risk and better comfort.</p></section>
+<section class="card stat-card"><h3>Selected window</h3><div class="stat-value">5 PM – 9 PM</div><p><span class="pill red">High risk</span></p></section>
+<section class="card stat-card wide"><h3>Smart checklist</h3><div class="mini-list"><div class="mini-row"><span>Rain protection</span><span>Carry umbrella</span></div><div class="mini-row"><span>Heat & humidity</span><span>Stay hydrated</span></div><div class="mini-row"><span>Wind</span><span>Prefer sheltered routes</span></div></div></section>
+</div>
+
+      
+    <footer class="footer">
+      <span>WeatherGPT &nbsp;|&nbsp; Built for a safer, smarter, greener India 🌱</span>
+      <span><a href="index.html">About</a><a href="settings.html">Privacy</a><a href="settings.html">Terms</a><a href="assistant.html">Contact</a></span>
+    </footer>
+    </div>
+  </main>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

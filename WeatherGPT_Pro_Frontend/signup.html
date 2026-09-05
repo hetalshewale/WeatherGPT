@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Create Account | WeatherGPT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+<div class="auth-shell auth-signup">
+  <div class="auth-brand-panel">
+    <div class="auth-logo"><div class="cloud-logo">☁️</div><div><b>Weather<span>GPT</span></b><small>Your AI Weather Decision Assistant</small></div></div>
+    <div class="auth-copy">
+      <div class="auth-kicker">JOIN WEATHERGPT</div>
+      <h1>Create your<br><span>weather workspace.</span></h1>
+      <p>Keep plans, preferences, alerts, and assistant conversations connected with one account.</p>
+      <div class="auth-quote">“Right information today, a brighter tomorrow.”</div>
+    </div>
+  </div>
+
+  <div class="auth-card">
+    <div class="auth-card-head">
+      <div><h2>Create account</h2><p>Set up your WeatherGPT profile</p></div>
+      <div class="avatar">WG</div>
+    </div>
+
+    <form id="signupForm" novalidate>
+      <div class="auth-field">
+        <label for="signupName">Full name</label>
+        <input id="signupName" type="text" autocomplete="name" placeholder="Krishna Sharma" required minlength="2">
+        <small class="field-error" data-error-for="signupName"></small>
+      </div>
+      <div class="auth-field">
+        <label for="signupEmail">Email address</label>
+        <input id="signupEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <small class="field-error" data-error-for="signupEmail"></small>
+      </div>
+      <div class="auth-field">
+        <label for="signupPassword">Password</label>
+        <div class="password-wrap">
+          <input id="signupPassword" type="password" autocomplete="new-password" placeholder="Minimum 6 characters" required minlength="6">
+          <button type="button" class="password-toggle" data-password-target="signupPassword">Show</button>
+        </div>
+        <small class="field-error" data-error-for="signupPassword"></small>
+      </div>
+      <div class="auth-field">
+        <label for="signupConfirm">Confirm password</label>
+        <div class="password-wrap">
+          <input id="signupConfirm" type="password" autocomplete="new-password" placeholder="Re-enter your password" required>
+          <button type="button" class="password-toggle" data-password-target="signupConfirm">Show</button>
+        </div>
+        <small class="field-error" data-error-for="signupConfirm"></small>
+      </div>
+
+      <label class="check terms">
+        <input id="acceptTerms" type="checkbox">
+        <span>I agree to the Terms and Privacy Policy.</span>
+      </label>
+      <small class="field-error" data-error-for="acceptTerms"></small>
+
+      <button class="auth-primary" type="submit">Create Account →</button>
+      <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+      <p class="auth-note">Frontend-only demo: credentials are stored in browser localStorage. Use a real auth provider/backend before deployment.</p>
+    </form>
+  </div>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="auth.js"></script>
+</body>
+</html>

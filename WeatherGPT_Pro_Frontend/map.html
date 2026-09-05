@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="WeatherGPT responsive weather decision assistant frontend">
+<title>Live Map | WeatherGPT</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand-mini">WeatherGPT</div>
+    <nav class="nav"><a href="index.html" class=""><span class="nav-icon">⌂</span><span class="nav-label">Dashboard</span></a><a href="plan.html" class=""><span class="nav-icon">▣</span><span class="nav-label">Plan My Day</span></a><a href="assistant.html" class=""><span class="nav-icon">▧</span><span class="nav-label">AI Assistant</span></a><a href="forecast.html" class=""><span class="nav-icon">☁</span><span class="nav-label">Forecast</span></a><a href="map.html" class="active"><span class="nav-icon">◫</span><span class="nav-label">Live Map</span></a><a href="air-quality.html" class=""><span class="nav-icon">♨</span><span class="nav-label">Air Quality</span></a><a href="alerts.html" class=""><span class="nav-icon">♧</span><span class="nav-label">Alerts</span></a><a href="compare.html" class=""><span class="nav-icon">▥</span><span class="nav-label">Compare Cities</span></a><a href="travel.html" class=""><span class="nav-icon">✈</span><span class="nav-label">Travel Planner</span></a><a href="saved.html" class=""><span class="nav-icon">♡</span><span class="nav-label">Saved Plans</span></a><a href="settings.html" class=""><span class="nav-icon">⚙</span><span class="nav-label">Settings</span></a></nav>
+    <div class="green-card">
+      <div class="leaf">🌱</div>
+      <strong>A greener tomorrow</strong>
+      <p>Smarter choices for a healthier India. 🌿</p>
+    </div>
+  </aside>
+
+  <div class="overlay"></div>
+
+  <header class="topbar">
+    <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+    <div class="logo">
+      <div class="cloud-logo">☁️</div>
+      <div class="logo-text">
+        <b>Weather<span>GPT</span></b>
+        <small>Your AI Weather Decision Assistant</small>
+      </div>
+    </div>
+
+    <label class="searchbar" aria-label="Search">
+      <span>⌕</span>
+      <input id="globalSearch" type="search" placeholder="Search any city or ask a question...">
+    </label>
+
+    <div class="location-chip">📍 Mumbai, Maharashtra</div>
+    <div class="top-spacer"></div>
+
+    <div class="clock">
+      <small id="currentDate">Loading date...</small>
+      <strong id="currentTime">--:--</strong>
+    </div>
+
+    <div class="theme-toggle time-toggle" aria-label="Theme switch">
+      <button data-theme="dark" class="active">☀️</button>
+      <button data-theme="light">🌙</button>
+    </div>
+
+    <button class="icon-btn" aria-label="Notifications">♧<b class="badge">3</b></button>
+    <div class="user account-menu"><button class="avatar account-avatar" type="button" aria-label="Account menu"><span data-user-initials>KS</span></button><button class="account-name" type="button"><span class="account-label">Hello, <span data-user-name>Krishna</span>⌄</span></button><button class="account-logout" data-logout type="button">Logout</button></div>
+  </header>
+
+  <main class="main">
+    <div class="page-shell">
+      
+<div class="page-title"><h1>Live Weather Map</h1><p>Visualize current conditions, rain bands and nearby areas.</p></div>
+<section class="card stat-card map-box">
+  <div class="map-dot" data-city="Mumbai" data-temp="29°C" style="left:54%;top:52%"></div>
+  <div class="map-label" style="left:49%;top:57%">📍 Mumbai • 29°C</div>
+  <div class="map-dot" data-city="Navi Mumbai" data-temp="28°C" style="left:71%;top:39%"></div>
+  <div class="map-label" style="left:67%;top:32%">Navi Mumbai • 28°C</div>
+  <div class="map-dot" data-city="Thane" data-temp="27°C" style="left:30%;top:62%"></div>
+  <div class="map-label" style="left:24%;top:67%">Thane • 27°C</div>
+  <div class="map-label" style="right:18px;top:18px">🌧️ Rain radar • Active</div>
+</section>
+
+      
+    <footer class="footer">
+      <span>WeatherGPT &nbsp;|&nbsp; Built for a safer, smarter, greener India 🌱</span>
+      <span><a href="index.html">About</a><a href="settings.html">Privacy</a><a href="settings.html">Terms</a><a href="assistant.html">Contact</a></span>
+    </footer>
+    </div>
+  </main>
+</div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
