@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherGPT Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">☁️</div>
+
+            <div>
+                <h2>Weather<span>GPT</span></h2>
+                <p>Your AI Weather Decision Assistant</p>
+            </div>
+        </div>
+
+        <nav class="menu">
+
+            <a href="#" class="menu-item active">
+                <span class="menu-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">▣</span>
+                <span>Plan My Day</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">▣</span>
+                <span>AI Assistant</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">☁</span>
+                <span>Forecast</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">◈</span>
+                <span>Live Map</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">≋</span>
+                <span>Air Quality</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">♧</span>
+                <span>Alerts</span>
+                <b class="notification">3</b>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">▥</span>
+                <span>Compare Cities</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">✈</span>
+                <span>Travel Planner</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">♡</span>
+                <span>Saved Plans</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <div class="green-card">
+            <div class="plant">🌱</div>
+            <h3>A greener<br>tomorrow</h3>
+            <p>Smarter choices<br>for a healthier<br>India. 🌱</p>
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div class="search-box">
+                <span>⌕</span>
+                <input type="text" placeholder="Search any city or ask a question...">
+            </div>
+
+            <div class="location">
+                <span class="pin">●</span>
+                <strong>Mumbai, Maharashtra</strong>
+            </div>
+
+            <div class="date-time">
+                <small>Tue, 9 Sep 2025</small>
+                <strong>5:42 PM</strong>
+            </div>
+
+            <div class="theme">
+                ☀️ &nbsp; 🌙
+            </div>
+
+            <div class="bell">
+                ♧
+                <b>3</b>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">KS</div>
+                <strong>Hello, Krishna</strong>
+                <span>⌄</span>
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="dashboard">
+
+            <!-- LEFT CONTENT -->
+            <div class="left-content">
+
+                <!-- HERO -->
+                <div class="hero">
+
+                    <div class="hero-content">
+
+                        <h1>
+                            Plan Smarter.<br>
+                            <span>Live Better.</span>
+                        </h1>
+
+                        <p>
+                            AI-powered weather insights to help you<br>
+                            decide when to go, what to do, and how to stay safe.
+                        </p>
+
+                    </div>
+
+                    <div class="hero-quote">
+                        <i>"Right information</i><br>
+                        <i>today, a brighter</i><br>
+                        <i>tomorrow."</i>
+                    </div>
+
+                </div>
+
+
+                <!-- PLANNING CARD -->
+                <div class="planning-card">
+
+                    <div class="section-heading">
+                        <div class="heading-icon">☁</div>
+
+                        <div>
+                            <h2>What are you planning?</h2>
+                            <p>Select an activity and get personalized weather recommendations.</p>
+                        </div>
+
+                        <button class="example-btn">Try an example ✨</button>
+                    </div>
+
+
+                    <div class="activity-list">
+
+                        <div class="activity">
+                            🚗
+                            <span>Travel</span>
+                        </div>
+
+                        <div class="activity selected">
+                            🏃
+                            <span>Outdoor Activity</span>
+                        </div>
+
+                        <div class="activity">
+                            👥
+                            <span>Event</span>
+                        </div>
+
+                        <div class="activity">
+                            ⚽
+                            <span>Sports</span>
+                        </div>
+
+                        <div class="activity">
+                            ⛰️
+                            <span>Trip</span>
+                        </div>
+
+                        <div class="activity">
+                            📷
+                            <span>Photography</span>
+                        </div>
+
+                        <div class="activity">
+                            ▦
+                            <span>Other</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="planning-bottom">
+
+                        <div class="field">
+                            <label>Location</label>
+                            <div class="input-field">
+                                📍 Mumbai, Maharashtra
+                                <span>×</span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Date</label>
+                            <div class="input-field">
+                                ▣ Tomorrow
+                                <span>×</span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Time</label>
+                            <div class="input-field">
+                                ◷ 5:00 PM – 9:00 PM
+                                <span>×</span>
+                            </div>
+                        </div>
+
+                        <button class="analyze">
+                            Analyze My Plan →
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ANALYSIS CARDS -->
+                <div class="analysis-grid">
+
+                    <!-- YOUR PLAN -->
+                    <div class="plan-card">
+
+                        <div class="card-title">
+                            <span>🏃</span>
+                            <h3>Your Plan</h3>
+                        </div>
+
+                        <h2>Outdoor Activity (Evening Run)</h2>
+
+                        <p class="muted">
+                            Mumbai, Maharashtra | Tomorrow | 5:00 PM – 9:00 PM
+                        </p>
+
+                        <div class="risk-area">
+
+                            <div class="risk-circle">
+                                <strong>76</strong>
+                                <span>/100</span>
+                                <small>HIGH RISK</small>
+                            </div>
+
+                            <div class="danger-box">
+                                <h3>⚠️ &nbsp; Not Recommended</h3>
+
+                                <p>
+                                    High chance of rain and strong winds
+                                    may affect your outdoor activity.
+                                    Consider rescheduling or taking
+                                    proper precautions.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WHY RISK -->
+                    <div class="risk-card">
+
+                        <div class="card-title">
+                            <span>▥</span>
+                            <h3>Why is the risk high?</h3>
+                        </div>
+
+                        <div class="weather-stat">
+                            <span class="stat-icon">☁️</span>
+                            <div>
+                                <b>Rain probability</b>
+                                <small>High chance of rain between 5 PM – 9 PM</small>
+                            </div>
+                            <strong class="red">78%</strong>
+                        </div>
+
+                        <div class="weather-stat">
+                            <span class="stat-icon">≋</span>
+                            <div>
+                                <b>Wind speed</b>
+                                <small>Strong winds may make activities difficult</small>
+                            </div>
+                            <strong class="red">22 km/h</strong>
+                        </div>
+
+                        <div class="weather-stat">
+                            <span class="stat-icon">🌡️</span>
+                            <div>
+                                <b>Temperature</b>
+                                <small>Feels like 32°C, may cause discomfort</small>
+                            </div>
+                            <strong>29°C</strong>
+                        </div>
+
+                        <div class="weather-stat">
+                            <span class="stat-icon">💧</span>
+                            <div>
+                                <b>Humidity</b>
+                                <small>High humidity, may feel more tiring</small>
+                            </div>
+                            <strong class="green">78%</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- WHAT SHOULD YOU DO -->
+                    <div class="advice-card">
+
+                        <div class="card-title">
+                            <span>💡</span>
+                            <h3>What should you do?</h3>
+                        </div>
+
+                        <ul>
+                            <li>Consider rescheduling to an earlier time.</li>
+                            <li>Carry an umbrella or rain jacket.</li>
+                            <li>Avoid open areas during heavy rain.</li>
+                            <li>Stay hydrated.</li>
+                            <li>Wear comfortable, waterproof shoes.</li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- BETTER TIME -->
+                    <div class="better-card">
+
+                        <div class="card-title">
+                            <span>◷</span>
+                            <h3>Better Time to Go</h3>
+                        </div>
+
+                        <div class="time-box bad">
+                            <small>Your Selected Time</small>
+                            <strong>5 PM – 9 PM</strong>
+                            <span>Risk: 76 (High)</span>
+                        </div>
+
+                        <div class="time-box good">
+                            <small>Recommended Time</small>
+                            <strong>3 PM – 6 PM</strong>
+                            <span>Risk: 28 (Low)</span>
+                        </div>
+
+                        <button class="compare-btn">
+                            Compare Another Time
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORECAST -->
+                <div class="forecast-area">
+
+                    <!-- HOURLY -->
+                    <div class="hourly-card">
+
+                        <div class="forecast-header">
+                            <h3>◷ &nbsp; Hourly Forecast (Tomorrow)</h3>
+                            <a href="#">View Full Forecast →</a>
+                        </div>
+
+                        <div class="hourly-list">
+
+                            <div class="hour">
+                                <b>12 PM</b>
+                                <span>🌤️</span>
+                                <strong>31°</strong>
+                                <small>💧 20%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>1 PM</b>
+                                <span>☁️</span>
+                                <strong>30°</strong>
+                                <small>💧 15%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>2 PM</b>
+                                <span>☁️</span>
+                                <strong>29°</strong>
+                                <small>💧 25%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>3 PM</b>
+                                <span>☁️</span>
+                                <strong>28°</strong>
+                                <small>💧 40%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>4 PM</b>
+                                <span>🌦️</span>
+                                <strong>27°</strong>
+                                <small>💧 60%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>5 PM</b>
+                                <span>🌧️</span>
+                                <strong>26°</strong>
+                                <small>💧 78%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>6 PM</b>
+                                <span>🌧️</span>
+                                <strong>26°</strong>
+                                <small>💧 82%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>7 PM</b>
+                                <span>🌧️</span>
+                                <strong>25°</strong>
+                                <small>💧 80%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>8 PM</b>
+                                <span>🌧️</span>
+                                <strong>25°</strong>
+                                <small>💧 60%</small>
+                            </div>
+
+                            <div class="hour">
+                                <b>9 PM</b>
+                                <span>🌥️</span>
+                                <strong>25°</strong>
+                                <small>💧 40%</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 7 DAY -->
+                    <div class="seven-day">
+
+                        <div class="forecast-header">
+                            <h3>🗓️ &nbsp; 7-Day Forecast</h3>
+                            <a href="#">View All →</a>
+                        </div>
+
+                        <div class="days">
+
+                            <div class="day">
+                                <b>Tue</b>
+                                <small>9 Sep</small>
+                                <span>🌤️</span>
+                                <strong>29° <small>24°</small></strong>
+                                <em>💧 20%</em>
+                            </div>
+
+                            <div class="day">
+                                <b>Wed</b>
+                                <small>10 Sep</small>
+                                <span>🌦️</span>
+                                <strong>28° <small>25°</small></strong>
+                                <em>💧 78%</em>
+                            </div>
+
+                            <div class="day">
+                                <b>Thu</b>
+                                <small>11 Sep</small>
+                                <span>🌧️</span>
+                                <strong>27° <small>24°</small></strong>
+                                <em>💧 65%</em>
+                            </div>
+
+                            <div class="day">
+                                <b>Fri</b>
+                                <small>12 Sep</small>
+                                <span>🌦️</span>
+                                <strong>29° <small>24°</small></strong>
+                                <em>💧 40%</em>
+                            </div>
+
+                            <div class="day">
+                                <b>Sat</b>
+                                <small>13 Sep</small>
+                                <span>☀️</span>
+                                <strong>31° <small>25°</small></strong>
+                                <em>💧 10%</em>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RIGHT PANEL ================= -->
+            <aside class="right-panel">
+
+                <!-- CURRENT WEATHER -->
+                <div class="current-weather">
+
+                    <div class="panel-heading">
+                        <h2>☁️ &nbsp; Current Weather</h2>
+                        <span class="live">● Live</span>
+                    </div>
+
+                    <div class="current-main">
+
+                        <div class="weather-icon">🌤️</div>
+
+                        <div>
+                            <strong>29°C</strong>
+                            <h3>Partly Cloudy</h3>
+                            <p>Feels like 32°C</p>
+                        </div>
+
+                    </div>
+
+                    <div class="weather-details">
+
+                        <div>
+                            <span>💧</span>
+                            <b>78%</b>
+                            <small>Humidity</small>
+                        </div>
+
+                        <div>
+                            <span>≋</span>
+                            <b>14 km/h</b>
+                            <small>Wind</small>
+                        </div>
+
+                        <div>
+                            <span>◉</span>
+                            <b>1010 hPa</b>
+                            <small>Pressure</small>
+                        </div>
+
+                        <div>
+                            <span>◉</span>
+                            <b>10 km</b>
+                            <small>Visibility</small>
+                        </div>
+
+                        <div>
+                            <span>☀️</span>
+                            <b>6</b>
+                            <small>UV Index</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AI CHAT -->
+                <div class="chat-panel">
+
+                    <div class="chat-header">
+
+                        <div class="bot-icon">🤖</div>
+
+                        <div>
+                            <h2>Ask WeatherGPT</h2>
+                            <p>Your AI Weather Assistant</p>
+                        </div>
+
+                    </div>
+
+                    <div class="hello">
+                        <h3>Hi Krishna! 👋</h3>
+
+                        <p>
+                            Ask me anything about weather, travel,
+                            activities, or get personalized recommendations.
+                        </p>
+                    </div>
+
+
+                    <div class="questions">
+
+                        <div class="question">
+                            ◉ Should I go for a run tomorrow evening?
+                        </div>
+
+                        <div class="question">
+                            ◉ What's the best time for an outdoor event?
+                        </div>
+
+                        <div class="question">
+                            ◉ Is it safe to travel to Lonavala this weekend?
+                        </div>
+
+                        <div class="question">
+                            ◉ Do I need an umbrella tomorrow?
+                        </div>
+
+                        <div class="question">
+                            ◉ Show me the weather for next week.
+                        </div>
+
+                    </div>
+
+
+                    <div class="chat-input">
+                        <input type="text" placeholder="Ask anything about weather...">
+                        <button>➤</button>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <span>WeatherGPT &nbsp;|&nbsp; Built for a safer, smarter, greener India 🌱</span>
+
+            <div>
+                <a href="#">About</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
